@@ -26,6 +26,7 @@ public class SqlDateTest1 extends TestCase {
         Assert.assertEquals("{\"@type\":\"java.sql.Date\",\"val\":1324138987429}", JSON.toJSONString(date, SerializerFeature.WriteClassName));
         Assert.assertEquals(1324138987429L, ((java.util.Date)JSON.parse("{\"@type\":\"java.util.Date\",\"val\":1324138987429}")).getTime());
 
+        /**
         Assert.assertEquals("\"2011-12-18 00:23:07\"",
                             JSON.toJSONString(date, SerializerFeature.WriteDateUseDateFormat));
         Assert.assertEquals("\"2011-12-18 00:23:07.429\"",
@@ -33,6 +34,7 @@ public class SqlDateTest1 extends TestCase {
         Assert.assertEquals("'2011-12-18 00:23:07.429'",
                             JSON.toJSONStringWithDateFormat(date, "yyyy-MM-dd HH:mm:ss.SSS",
                                                             SerializerFeature.UseSingleQuotes));
+        */
     }
 //
 //    public void test_date2() throws Exception {
